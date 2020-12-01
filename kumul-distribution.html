@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Kumulierte Binomial Verteilung</title>
+    <script src="main.js"></script>
+</head>
+<body>
+<header>
+    <h1>Kumulierte Binomial Verteilung</h1>
+</header>
+<div class="wrapper">
+    <label>
+        k
+        <input type="number" class="var-input" id="k">
+    </label>
+    <label>
+        n
+        <input type="number" class="var-input" id="n">
+    </label>
+    <label>
+        p
+        <input type="number" class="var-input" id="p" step="0.00000001">
+    </label>
+    <label>
+        Nachkommastellen: <br />
+        <input type="number" class="var-input smallInput" id="len">
+    </label>
+    <label>
+        <button class="submitBtn" onclick="buttonClick('kumul-density')">Berechnen</button>
+    </label>
+
+    <div class="result" id="res">
+        <p>Ergenis:</p>
+        <p id="resBox"></p>
+    </div>
+</div>
+</body></html>
